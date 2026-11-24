@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Herfa</string>
+    <string name="lock">وضع المشرف</string>
+    <string name="add_craft">إضافة حرفة</string>
 </resources>
