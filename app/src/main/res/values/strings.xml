@@ -1,3 +1,14 @@
 <resources>
     <string name="app_name">Herfa</string>
+    <string name="craft_image">صورة الحرفة</string>
+    <string name="hint_craft_name">اسم الحرفة</string>
+    <string name="hint_craft_description">وصف الحرفة</string>
+    <string name="hint_craft_tools">الأدوات المستخدمة</string>
+    <string name="label_region">المنطقة</string>
+    <string name="region_east">الشرقية</string>
+    <string name="region_central">الوسطى</string>
+    <string name="region_west">الغربية</string>
+    <string name="region_south">الجنوبية</string>
+    <string name="region_north">الشمالية</string>
+    <string name="button_save">حفظ</string>
 </resources>
