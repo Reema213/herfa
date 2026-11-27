@@ -17,4 +17,6 @@
     <string name="pin_cancel">إلغاء</string>
     <string name="pin_correct">تم تفعيل وضع المشرف</string>
     <string name="pin_wrong">الرمز غير صحيح</string>
+    <string name="lock">وضع المشرف</string>
+    <string name="add_craft">إضافة حرفة</string>
 </resources>
