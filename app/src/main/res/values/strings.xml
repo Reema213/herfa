@@ -1,18 +1,25 @@
 <resources>
-        <string name="app_name">Herfa</string>
+    <string name="app_name">Herfa</string>
 
-        <!-- Member 3: Craft Detail Screen -->
-        <string name="detail_title">تفاصيل الحرفة</string>
-        <string name="detail_back">رجوع</string>
-        <string name="detail_share">مشاركة</string>
-        <string name="detail_image">صورة الحرفة</string>
-        <string name="detail_description">الوصف</string>
-        <string name="detail_tools">الأدوات المستخدمة</string>
-        <string name="detail_edit">تعديل</string>
-        <string name="detail_delete">حذف</string>
-        <string name="detail_admin_mode">وضع المشرف مفعّل، يمكنك الإضافة والتعديل والحذف</string>
-        <string name="detail_region">المنطقة: %1$s</string>
-        <string name="detail_delete_title">حذف هذه الحرفة</string>
-        <string name="detail_delete_message">سيتم حذف هذه الحرفة من الكتالوج نهائيًا، ولا يمكن التراجع عن ذلك.</string>
-        <string name="detail_cancel">إلغاء</string>
-    </resources>
+    <!-- Member 2: Catalog Screen -->
+    <string name="lock">وضع المشرف</string>
+    <string name="add_craft">إضافة حرفة</string>
+    <string name="all_crafts">جميع الحرف</string>
+    <string name="craft_count">عدد الحرف: %d</string>
+    <string name="admin_banner">وضع المشرف مفعّل: يمكنك الإضافة والتعديل والحذف</string>
+
+    <!-- Member 3: Craft Detail Screen -->
+    <string name="detail_title">تفاصيل الحرفة</string>
+    <string name="detail_back">رجوع</string>
+    <string name="detail_share">مشاركة</string>
+    <string name="detail_image">صورة الحرفة</string>
+    <string name="detail_description">الوصف</string>
+    <string name="detail_tools">الأدوات المستخدمة</string>
+    <string name="detail_edit">تعديل</string>
+    <string name="detail_delete">حذف</string>
+    <string name="detail_admin_mode">وضع المشرف مفعّل، يمكنك الإضافة والتعديل والحذف</string>
+    <string name="detail_region">المنطقة: %1$s</string>
+    <string name="detail_delete_title">حذف هذه الحرفة</string>
+    <string name="detail_delete_message">سيتم حذف هذه الحرفة من الكتالوج نهائيًا، ولا يمكن التراجع عن ذلك.</string>
+    <string name="detail_cancel">إلغاء</string>
+</resources>

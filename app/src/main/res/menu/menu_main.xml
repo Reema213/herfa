@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- قائمة شريط الكتالوج: فيها أيقونة القفل لوضع المشرف (Lab 6) -->
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/action_lock"
+        android:title="@string/lock"
+        android:icon="@drawable/ic_lock"
+        app:showAsAction="always" />
+
+</menu>

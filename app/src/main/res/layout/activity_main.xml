@@ -1,19 +1,126 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<!-- شاشة الكتالوج: U1 للمستخدم و A2 للمشرف -->
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#FBF6F0"
     tools:context=".MainActivity">
 
-    <TextView
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!-- شريط التطبيق: فيه الاسم وأيقونة القفل (Lab 6) -->
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="#8E1A22"
+            app:title="@string/app_name"
+            app:titleTextColor="@android:color/white" />
+
+        <!-- خط السدو: ممبر 4 تضيف الصورة في android:src -->
+        <ImageView
+            android:id="@+id/sadu_stripe"
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:scaleType="centerCrop"
+            android:importantForAccessibility="no"
+            tools:background="#2A1E1A" />
+
+        <!-- شريط وضع المشرف: يطلع بس للمشرف (A2) -->
+        <TextView
+            android:id="@+id/admin_banner"
+            android:text="@string/admin_banner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#F3E4E2"
+            android:paddingStart="16dp"
+            android:paddingTop="8dp"
+            android:paddingEnd="16dp"
+            android:paddingBottom="8dp"
+            android:textAlignment="viewStart"
+            android:textColor="#8E1A22"
+            android:textSize="13sp"
+            android:textStyle="bold"
+            android:visibility="gone"
+            tools:text="وضع المشرف مفعّل: يمكنك الإضافة والتعديل والحذف"
+            tools:visibility="visible" />
+
+        <!-- البحث والفلتر: شغل ممبر 4، يتفعل لما يجهز ملفها -->
+        <!-- <include layout="@layout/layout_search_filter" /> -->
+
+        <!-- عنوان القائمة وعدد الحرف (يتغيرون بعد البحث أو الفلتر) -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="10dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/list_title"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textAlignment="viewStart"
+                android:textColor="#2A1E1A"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                tools:text="جميع الحرف" />
+
+            <TextView
+                android:id="@+id/craft_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#6B5E57"
+                android:textSize="13sp"
+                tools:text="عدد الحرف: ٤" />
+        </LinearLayout>
+
+        <!-- رسالة لما ما تطلع نتائج بحث (ممبر 4 تتحكم فيها) -->
+        <TextView
+            android:id="@+id/empty_message"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:gravity="center"
+            android:textSize="15sp"
+            android:visibility="gone"
+            tools:text="ما فيه حرفة بهذا الاسم" />
+
+        <!-- قائمة الحرف: كل عنصر فيها هو item_craft.xml (Lab 9) -->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:clipToPadding="false"
+            android:paddingBottom="88dp"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            tools:itemCount="4"
+            tools:listitem="@layout/item_craft" />
+    </LinearLayout>
+
+    <!-- زر + للمشرف بس، مخفي بالبداية (A2) -->
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_gravity="bottom|end"
+        android:layout_margin="16dp"
+        android:src="@android:drawable/ic_input_add"
+        android:contentDescription="@string/add_craft"
+        android:visibility="gone"
+        app:backgroundTint="#8C6518"
+        app:tint="@android:color/white"
+        tools:visibility="visible" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>
