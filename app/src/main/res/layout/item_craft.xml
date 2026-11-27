@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- كرت حرفة واحدة في قائمة الكتالوج (U1 و A2) -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="16dp"
+    android:layout_marginEnd="16dp"
+    android:layout_marginBottom="10dp"
+    android:background="@android:color/white"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:padding="10dp">
+
+    <!-- صورة الحرفة -->
+    <ImageView
+        android:id="@+id/craft_image"
+        android:layout_width="76dp"
+        android:layout_height="76dp"
+        android:scaleType="centerCrop"
+        android:importantForAccessibility="no"
+        tools:src="@mipmap/ic_launcher" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_marginStart="14dp"
+        android:orientation="vertical">
+
+        <!-- اسم الحرفة -->
+        <TextView
+            android:id="@+id/craft_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="viewStart"
+            android:textColor="#2A1E1A"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            tools:text="السدو" />
+
+        <!-- منطقة الحرفة -->
+        <TextView
+            android:id="@+id/craft_region"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:textAlignment="viewStart"
+            android:textColor="#8E1A22"
+            android:textSize="14sp"
+            tools:text="الشمالية" />
+    </LinearLayout>
+</LinearLayout>
