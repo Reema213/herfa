@@ -2,4 +2,7 @@
     <string name="app_name">Herfa</string>
     <string name="lock">وضع المشرف</string>
     <string name="add_craft">إضافة حرفة</string>
+    <string name="all_crafts">جميع الحرف</string>
+    <string name="craft_count">عدد الحرف: %d</string>
+    <string name="admin_banner">وضع المشرف مفعّل: يمكنك الإضافة والتعديل والحذف</string>
 </resources>
