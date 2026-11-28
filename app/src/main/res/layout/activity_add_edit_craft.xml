@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".AddEditCraftActivity">
+
+    <ImageView
+        android:id="@+id/image_craft"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_gravity="center_horizontal"
+        android:contentDescription="@string/craft_image"
+        android:src="@drawable/ic_launcher_foreground" />
+
+    <EditText
+        android:id="@+id/edit_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:hint="@string/hint_craft_name"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/edit_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:gravity="top|start"
+        android:hint="@string/hint_craft_description"
+        android:inputType="textMultiLine"
+        android:minLines="3" />
+
+    <EditText
+        android:id="@+id/edit_tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:hint="@string/hint_craft_tools"
+        android:inputType="text" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/label_region"
+        android:textStyle="bold" />
+
+    <RadioGroup
+        android:id="@+id/radio_group_region"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/radio_east"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/region_east" />
+
+        <RadioButton
+            android:id="@+id/radio_central"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/region_central" />
+
+        <RadioButton
+            android:id="@+id/radio_west"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/region_west" />
+
+        <RadioButton
+            android:id="@+id/radio_south"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/region_south" />
+
+        <RadioButton
+            android:id="@+id/radio_north"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/region_north" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/button_save"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/button_save" />
+
+</LinearLayout>
