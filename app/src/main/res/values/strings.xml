@@ -22,4 +22,7 @@
     <string name="edit_craft">تعديل الحرفة</string>
     <string name="fill_required">الرجاء تعبئة الاسم والوصف والمنطقة</string>
     <string name="craft_saved">تم حفظ الحرفة</string>
+    <string name="all_crafts">جميع الحرف</string>
+    <string name="craft_count">عدد الحرف: %d</string>
+    <string name="admin_banner">وضع المشرف مفعّل: يمكنك الإضافة والتعديل والحذف</string>
 </resources>
